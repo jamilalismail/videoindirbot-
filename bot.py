@@ -3,7 +3,7 @@ from aiogram import Bot, Dispatcher, executor, types
 import yt_dlp
 import os
 
-API_TOKEN = os.getenv("API_TOKEN")  # لازم تضيف التوكن بـ Environment Variables
+API_TOKEN = os.getenv("API_TOKEN")  # التوكن من Environment Variables
 
 logging.basicConfig(level=logging.INFO)
 
@@ -13,7 +13,7 @@ dp = Dispatcher(bot)
 def download_video(url):
     ydl_opts = {
         'format': 'best',
-        'outtmpl': '/tmp/video.%(ext)s',  # تخزين الفيديوهات مؤقتًا
+        'outtmpl': '/tmp/video.%(ext)s',
         'quiet': True,
     }
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
