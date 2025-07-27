@@ -1,2 +1,2 @@
-# videoindirbot-
-Telegram bot for downloading videos without watermark
+# Telegram TikTok Bot
+بوت لتحميل فيديوهات تيك توك باستخدام aiogram و yt-dlp.
